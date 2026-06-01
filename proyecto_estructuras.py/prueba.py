@@ -101,7 +101,7 @@ def dibujar_venn3(A, B, C):
             label.set_text('\n'.join(sorted(datos)))
             label.set_fontsize(8)
 
-    print("\n--- REGIONES ---")
+    print("\nREGIONES:")
     print("Solo A:", solo_A)
     print("Solo B:", solo_B)
     print("Solo C:", solo_C)
@@ -114,7 +114,7 @@ def dibujar_venn3(A, B, C):
     plt.show()
 
 def main():
-    print("=== PROYECTO DE CONJUNTOS ===")
+    print("PROYECTO DE CONJUNTOS")
 
     U = ingresar_conjunto("Universo (U)")
 
@@ -138,7 +138,7 @@ def main():
         conjuntos["C"] = ingresar_conjunto("C")
 
     while True:
-        print("\n--- MENÚ ---")
+        print("\nMENÚ:")
         print("1. Mostrar conjuntos")
         print("2. Unión (A ∪ B)")
         print("3. Intersección (A ∩ B)")
