@@ -2,10 +2,6 @@
 import matplotlib.pyplot as plt
 from matplotlib_venn import venn2, venn3
 
-# ----------------------------
-# FUNCIONES BÁSICAS
-# ----------------------------
-
 def ingresar_conjunto(nombre):
     while True:
         elementos = input(f"Ingrese elementos de {nombre} separados por coma: ")
@@ -27,10 +23,6 @@ def mostrar_todos(conjuntos):
         mostrar_conjunto(nombre, conjunto)
 
 
-# ----------------------------
-# OPERACIONES
-# ----------------------------
-
 def union(A, B):
     return A.union(B)
 
@@ -45,11 +37,6 @@ def diferencia_simetrica(A, B):
 
 def complemento(U, A):
     return U - A
-
-
-# ----------------------------
-# DIAGRAMA VENN 2 CONJUNTOS
-# ----------------------------
 
 def dibujar_venn2(A, B):
     plt.figure(figsize=(10, 8))
@@ -79,11 +66,6 @@ def dibujar_venn2(A, B):
 
     plt.title("Diagrama de Venn (2 conjuntos)")
     plt.show()
-
-
-# ----------------------------
-# DIAGRAMA VENN 3 CONJUNTOS
-# ----------------------------
 
 def dibujar_venn3(A, B, C):
     plt.figure(figsize=(12, 10))
@@ -130,11 +112,6 @@ def dibujar_venn3(A, B, C):
 
     plt.title("Diagrama de Venn (3 conjuntos)")
     plt.show()
-
-
-# ----------------------------
-# PROGRAMA PRINCIPAL
-# ----------------------------
 
 def main():
     print("=== PROYECTO DE CONJUNTOS ===")
